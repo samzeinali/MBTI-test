@@ -1,0 +1,28 @@
+:root {
+    --color-input : #CCDECE;
+    --color-backgroundpages : #F2F3F5;
+    --color-button : #92E085;
+    --color-buttonhover : #347A5B;
+    --color-input-text : #888;
+    --color-buttontext-hover : #fff;
+    --color-bacground-graybox: #C7C7C7;
+    --color-background-help : #C8F4CC;
+    --color-text-blackgray : #333;
+    --color-background-select : #67BF59;
+    --fontfam-title : IRsansBold;
+    --fontfam-text : IRsansRegular;
+}
+@font-face {
+    font-family: IRsansBold;
+    src: url(../assests/fonts/IRANSansXFaNum-Bold.woff2)format("woff2");
+}
+@font-face {
+    font-family: IRsansRegular;
+    src: url(../assests/fonts/IRANSansXFaNum-Regular.woff2)format("woff2");
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
