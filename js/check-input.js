@@ -23,20 +23,21 @@ loginbutuon.addEventListener('click', function(){
     // console.log(famuser);
     // console.log(phoneuser);
     // console.log(mailuser);
-    if (nameuser == "" || nameuser.includes("0") || nameuser.includes("1") || nameuser.includes("2") || nameuser.includes("3") || nameuser.includes("4") || nameuser.includes("5") || nameuser.includes("6") || nameuser.includes("7") || nameuser.includes("8") || nameuser.includes("9")) {
+    if (nameuser == "" || nameuser.length < 3|| nameuser.includes("0") || nameuser.includes("1") || nameuser.includes("2") || nameuser.includes("3") || nameuser.includes("4") || nameuser.includes("5") || nameuser.includes("6") || nameuser.includes("7") || nameuser.includes("8") || nameuser.includes("9")) {
         console.log("not name");
         error_text.innerHTML = ""
         error_text.innerHTML += "لطفا نام درست را وارد کنید"
-    } else if (famuser == ""  || famuser.includes("0") || famuser.includes("1") || famuser.includes("2") || famuser.includes("3") || famuser.includes("4") || famuser.includes("5") || famuser.includes("6") || famuser.includes("7") || famuser.includes("8") || famuser.includes("9")) {
+    } else if (famuser == "" || famuser.length < 4 || famuser.includes("0") || famuser.includes("1") || famuser.includes("2") || famuser.includes("3") || famuser.includes("4") || famuser.includes("5") || famuser.includes("6") || famuser.includes("7") || famuser.includes("8") || famuser.includes("9")) {
         console.log("not fam");
         error_text.innerHTML = ""
         error_text.innerHTML += "نام خانوادگی صحیح نیست"
-    } else if (phoneuser == "" || phoneuser.length < 11 ){
+    } else if (phoneuser == "" || phoneuser.length < 11 || phoneuser[0] != "0" || phoneuser[1] != "9"){
         console.log("not phone");
         error_text.innerHTML = ""
         error_text.innerHTML += "شماره موبایل باید با 09 شروع شود . نمونه : 09381122333"
     } else {
         error_text.innerHTML = ""
         console.log("ok");
+        location.replace("");
     }
 })
